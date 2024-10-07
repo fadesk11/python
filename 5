@@ -1,0 +1,120 @@
+# 1
+a = int(input("Введите ваш возраст\n"))
+if a < 17:
+    print("Вы несовершеннолетний")
+if a >= 18 and a <= 65:
+        print("Вы трудоспособный человек")
+if a > 65 :
+        print("Вы пенсионер/Динозавр")
+# 2
+b = int(input("Введите стоимость покупки\n"))
+if b <= 1000:
+    print("Нема скидок, лошок")
+if b > 1000 and b < 5000:
+    print("Ваша скидка - 5%")
+if b >= 5000:
+    print("Ваша скидка - 10%")
+# 3
+f1 = int(input("Введите первое число\n"))
+f2 = int(input("Введите второе число\n"))
+f = input("Введите операцию, которую хотите провести над ними,+, -, *, /\n")
+if f == "+":
+    print(f1+f2)
+if f == "-":
+    print(f1-f2)
+if f == "*":
+    print(f1*f2)
+if f == "/":
+    print(f1/f2)
+else:
+    print("Учи математику")
+# 4
+chs = int(input("Введите ваше число"))
+def check_number(n):
+    if n % 2 == 0 and (n % 10 == 2 or n % 10 == 6):
+        return True
+    else:
+        return False
+
+print(check_number(chs))
+# 5
+pss = str(input("Введите your pASSword :3\n"))
+psas = ("Randomint")
+if pss == psas:
+    print("Доступ разрешен.")
+else:
+    print("Неверный пароль")
+# 6
+grid = {
+    'B1': 'S', 'B2': 'V', 'B3': 'S', 'B4': 'V',
+    'B5': 'O', 'B6': 'V', 'B7': 'S', 'B8': 'V',
+    'C1': 'S', 'C2': 'V', 'C3': 'O', 'C4': 'S',
+    'C5': 'S', 'C6': 'S', 'C7': 'V', 'C8': 'S',
+    'C9': 'S', 'C10': 'V', 'C11': 'V', 'C12': 'O',
+}
+
+def check_square(coord):
+    if coord in grid:
+        if grid[coord] == 'S':
+            return "Тут живет Синий попугай"
+        elif grid[coord] == 'V':
+            return "Тут живет Зеленый попугай"
+        else:
+            return "Тут никого"
+    else:
+        return "Координаты вне диапазона"
+
+coord = input("Введи координаты бомбардировки: \n")
+print(check_square(coord))
+# 7
+n = int(input("Введите первое число\n"))
+k = int(input("Введите второе число\n"))
+if n % k == 0:
+    print("Ну оно кратно шариш")
+else:
+    print("Ну оно некратно шариш")
+# 8
+def check_mission_readiness(level, health):
+    if level < 5:
+        return "Ваш уровень слишком низкий для выполнения миссии."
+    elif level >= 5:
+        if health > 50:
+            return "Вы готовы к миссии!"
+        elif 20 <= health <= 50:
+            return "Ваше здоровье низкое, будьте осторожны."
+        elif health < 20:
+            return "Ваше здоровье слишком низкое для выполнения миссии."
+    else:
+        return "Некорректные данные."
+
+level = int(input("Введите LVL персонажа: "))
+health = int(input("Введите кол-во хп: "))
+print(check_mission_readiness(level, health))
+# 9
+inventory = ["яблоко", "шариковая ручка"]
+
+def check_inventory():
+    if "ключ" in inventory and "фонарь" in inventory:
+        return "Вы можете пройти через дверь."
+    elif "ключ" not in inventory:
+        return "У вас нет ключа, вы не можете открыть дверь."
+    elif "фонарь" not in inventory:
+        return "У вас нет фонаря, слишком темно, чтобы пройти."
+    else:
+        return "У вас нет ни ключа, ни фонаря, вы не можете пройти через дверь."
+
+print(check_inventory())
+# 10
+king = "Enemies are coming! Are the archers ready?"
+warrior = "For the Alliance!"
+magician = "The spell is ready."
+
+def check_punctuation(sentence):
+    if sentence.endswith(("?", "!", ".")):
+        return "Ну тут конец на ? или !"
+    else:
+        return "Ну тут конец на ."
+
+print(check_punctuation(king))
+print(check_punctuation(warrior))
+print(check_punctuation(magician))
