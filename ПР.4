@@ -1,0 +1,24 @@
+# 1 задание
+text = 'important information in one line'
+ut = str(input('Введите букву:\n'))
+if ut in text:
+    print(True)
+else:
+    print(False)
+# 2 задание
+a = int(input("Первое значение: \n"))
+b = int(input("второе значение: \n"))
+if a == b:
+    print("Квадрат, ", a*b)
+else:
+    print("Прямоугольник, ", a*b)
+    # 3 задание
+good = ['Хорошо',"Нормально","Отлично"]
+bad = ["Плохо","Не хорошо","..."]
+uemo = str(input("Че как настрой братишка?\n"))
+if uemo in good:
+    print("😊")
+elif uemo in bad:
+    print("😢")
+elif uemo not in good and uemo not in bad:
+    print("😒")
