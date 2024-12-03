@@ -2,4 +2,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
-![image](https://github.com/user-attachments/assets/fdfcc5cd-6b3b-49d4-8685-09d3944b375a)
+
+![Без имени-1](https://github.com/user-attachments/assets/b73ed8d1-400c-4240-bd3b-eba9179b2ffe)
