@@ -1,0 +1,9 @@
+def traveltime(robot_speed: float, planet_diameter: float) -> float:
+    travel_length = planet_diameter * 3.14159
+    travel_time = travel_length / robot_speed
+    return travel_time
+
+plname = "Земля"
+rname = "Igorbot v2"
+calc = traveltime(10, 12742)
+print(f"Роботу {rname} необходимо {calc:.2f} часов, чтоб проехать планету {plname}")
