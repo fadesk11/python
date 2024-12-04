@@ -1,0 +1,10 @@
+# 1
+sum_lam=lambda x,y: x*y
+print(sum_lam(2,3))
+# 2
+c = int(input(f"Всего чисел будет: "))
+accc = []
+for i in range(c):
+    accc.append(int(input(f"Введите число {i + 1}: ")))
+accc = list(filter(lambda a: (a % 3 == 0), accc))
+print(accc)
