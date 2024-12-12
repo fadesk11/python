@@ -1,0 +1,71 @@
+# 1
+def aplha(inp:str):
+    inp = list(inp)
+    abc = list("абвгдеёжзийклмнопрстуфхцчшщъьэюя")
+    out =[]
+    for i in inp:
+        if i in abc:
+            out.append(i)
+            abc.remove(i)
+    out += abc
+    return out
+
+print(aplha("пайтон"))
+print("")
+# 2
+def calendar(name: str, year: int, days: int):
+    print(f"Календарь: {name} {year}")
+    for i in range(days):
+        if (i + 1) % 7 == 0:
+            print(i + 1, end="\n")
+        else:
+            print(i + 1, end=" ")
+
+
+calendar("Некогдябрь", 1234, 32)
+print("\n ")
+# 3
+def bin_sys(a:int,b:int):
+    n = b - a + 1
+    sumo = 0
+    for i in range(n):
+        outo = bin(i+a)
+        sumo += i + a
+        outo = outo[2::]
+        print(outo)
+    sumo = bin(sumo)[2::]
+    print("сумма:", sumo)
+
+
+bin_sys(3,6)
+print("")
+# 4
+def star(lst: list, row: int, elem: int):
+    lst[row][elem] = " * "
+    print(lst[0])
+    print(lst[1])
+    print(lst[2])
+
+
+field = [["[ ]", "[ ]", "[ ]"],
+         ["[ ]", "[ ]", "[ ]"],
+         ["[ ]", "[ ]", "[ ]"]]
+star(field, 2, 1)
+print("")
+# 5
+def numbers(n: int, i=1):
+    print(f"[{n}] [{n + 1 * i}]\n[{n + 2 * i}] [{n + 3 * i}]")
+
+
+numbers(1, 2)
+print("")
+# 6
+def ex(string: str,letter:str):
+    n = 0
+    for i in string:
+        if i.capitalize() == letter.capitalize():
+            n += 1
+    return n
+
+
+print((ex("My name is sara","s")))
